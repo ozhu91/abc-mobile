@@ -1,0 +1,68 @@
+.fleckering::before {
+    animation-name: fleckering;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fleckering {
+    from {
+        left: -20%;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
+
+.scrolling {
+    animation-name: scrolling;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scrolling {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-top: -100%;
+    }
+}
+
+.spinnig {
+    animation-name: spinning;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .showing {
+      animation-name: showing;
+      animation-duration: 2.5s;
+      animation-fill-mode: backwards;
+      animation-timing-function: linear;
+      visibility: visible!important;
+}
+
+@keyframes showing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

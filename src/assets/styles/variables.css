@@ -1,0 +1,47 @@
+/*
+    =============== Fonts ===============
+*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+  }
+
+/*
+    =============== Color palette ===============
+*/
+
+.main-font-color {
+    color: #fff;
+}
+
+.sub-font-color-1 {
+    color: #a6a6a7;
+}
+
+.sub-font-color-2 {
+    color: #c19e56;
+}
+
+.main-bg-color {
+    background-color: #202024;
+}
+
+.sub-bg-color-1 {
+    background-color: #a6a6a7;
+}
+
+.sub-bg-color-2 {
+    background-color: #c19e56;
+}
+
+.section-padding {
+    padding: 0.7rem 0;
+}
+
+.section-margin {
+    margin: 0.7rem 0;
+}
+

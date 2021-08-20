@@ -1,28 +1,52 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="main-bg-color main-font-color">
+    <Header />
+    <FirstSections />
+    <SecondSection />
+    <Questionnaire />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import FirstSections from './components/FirstSections.vue'
+import SecondSection from './components/SecondSection.vue'
+import Questionnaire from './components/Qestionnaire/Questionnaire.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    FirstSections,
+    SecondSection,
+    Questionnaire
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@import "./assets/styles/reset.css";
+@import "./assets/styles/variables.css";
+@import "./assets/styles/animations.css";
+
+
+html {
+  font-size: 20px;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
 </style>
